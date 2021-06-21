@@ -8,12 +8,20 @@ Created on Sat Jun 19 11:48:14 2021
 import os
 from flask import Flask, flash, request, redirect, url_for, send_from_directory,render_template
 from werkzeug.utils import secure_filename
-
+import pandas as pd
 UPLOAD_FOLDER = r"F:\My_ML_Projects\Final Year Project\empatt\uploads"
 ALLOWED_EXTENSIONS = {'csv'}
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+def check_for_attributes(filename):
+    df = pd.read_csv(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+    print("Database length:",len(df.columns))
+    if len(df.columns) != 35:
+        return False
+    return True
+
 
 @app.route('/', methods=['POST','GET'])
 def home():
@@ -31,7 +39,11 @@ def home():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            return "Successful"
+            is_accurate = check_for_attributes(filename)
+            if is_accurate:
+                return "Successful"
+            else:
+                return "Unsuccessful"
     return render_template('home.html')
 
     
