@@ -44,6 +44,7 @@ itsdangerous==2.0.1
 jedi @ file:///D:/bld/jedi_1605054817163/work
 Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1621419064915/work
 jinja2-time==0.2.0
+joblib==1.0.1
 jsonschema @ file:///home/conda/feedstock_root/build_artifacts/jsonschema_1614815863336/work
 jupyter-client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1615693636836/work
 jupyter-core @ file:///D:/bld/jupyter_core_1612125450516/work
@@ -59,8 +60,10 @@ nbclient @ file:///home/conda/feedstock_root/build_artifacts/nbclient_1614336084
 nbconvert @ file:///D:/bld/nbconvert_1605402041690/work
 nbformat @ file:///home/conda/feedstock_root/build_artifacts/nbformat_1617383142101/work
 nest-asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1617163391303/work
+numpy @ file:///D:/bld/numpy_1621506450533/work
 numpydoc @ file:///home/conda/feedstock_root/build_artifacts/numpydoc_1601580905698/work
 packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1612459636436/work
+pandas @ file:///D:/bld/pandas_1618263791034/work
 pandocfilters==1.4.2
 paramiko @ file:///home/conda/feedstock_root/build_artifacts/paramiko_1598988093657/work
 parso==0.7.0
@@ -106,7 +109,10 @@ regex @ file:///D:/bld/regex_1617644574793/work
 requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1608156231189/work
 rope @ file:///home/conda/feedstock_root/build_artifacts/rope_1622405324029/work
 Rtree @ file:///D:/bld/rtree_1610147302815/work
+scikit-learn==0.24.2
+scipy==1.7.0
 six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+sklearn==0.0
 snowballstemmer @ file:///home/conda/feedstock_root/build_artifacts/snowballstemmer_1611270869511/work
 sortedcontainers @ file:///home/conda/feedstock_root/build_artifacts/sortedcontainers_1621217038088/work
 Sphinx @ file:///home/conda/feedstock_root/build_artifacts/sphinx_1621971887443/work
@@ -120,6 +126,7 @@ spyder @ file:///D:/bld/spyder_1623452820390/work
 spyder-kernels @ file:///D:/bld/spyder-kernels_1623377385311/work
 testpath @ file:///home/conda/feedstock_root/build_artifacts/testpath_1621261527237/work
 textdistance @ file:///home/conda/feedstock_root/build_artifacts/textdistance_1611934751977/work
+threadpoolctl==2.1.0
 three-merge @ file:///home/conda/feedstock_root/build_artifacts/three-merge_1595515817927/work
 tinycss2 @ file:///home/conda/feedstock_root/build_artifacts/tinycss2_1616270911900/work
 toml @ file:///home/conda/feedstock_root/build_artifacts/toml_1604308577558/work
@@ -137,5 +144,6 @@ whichcraft==0.6.1
 win-inet-pton @ file:///D:/bld/win_inet_pton_1610147566231/work
 wincertstore==0.2
 wrapt @ file:///D:/bld/wrapt_1610095100080/work
+xgboost==1.4.2
 yapf @ file:///home/conda/feedstock_root/build_artifacts/yapf_1618790300295/work
 zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1614945704755/work
